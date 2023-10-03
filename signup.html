@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap demo</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="allstyles/custom.css">
+   </head>
+   <body>
+      <div class="header" tabindex = "-1">
+         <button class="buttonleft"><a href="index.html">Back</button>
+         
+         <div class="dropdown">
+            <button>Dropdown</button>
+            <div class="dropdown-content">
+              <a href="index.html">Log In</a>
+              <a href="index.html">Homepage</a>
+              <a href="Read.html">Read</a>
+              <a href="Watch.html">Watch</a>
+            </div>
+          </div>
+      </div>
+      <p class = "Signupnow"> Sign up now.</p>
+      <div class = "signuppage">
+      <div class="formbody">
+      <form class="was-validated" novalidate>
+         <div class="input-group" style= "position: inherit">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" style= "position:static"  required>
+            
+            <input type="text" aria-label="Last name" class="form-control" style= "position: static"  required>
+            
+         </div>
+         <br>
+         <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Please enter your email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" required>
+            <div class="valid-feedback">
+               Accepted
+            </div>
+            <div id="emailHelp
+            " class="form-text">We'll never share your email with anyone else.</div>
+         </div>
+         <br>
+         <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+            
+            <label class="form-check-label" for="flexSwitchCheckChecked">Do you want to recieve notifications on this email?</label>
+         </div>
+         <br>
+         <div class="mb-3">
+            <label for="formFile" class="form-label">Upload a Profile picture (optional)</label>
+            <input class="form-control" type="file" id="formFile">
+            
+         </div>
+         <br>
+         <div class="mb-3">
+            <label for="exampleColorInput" class="form-label">Choose a colour (optional)</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">       
+        </div>
+            <br>
+         <select class="form-select" aria-label="Default select example">
+            <option selected>Which city is most preferred?</option>
+            <option value="3">Tokyo</option>
+            <option value="1">Los Angeles</option>
+            <option value="3">Stockholm</option>
+            <option value="2">New York</option>
+            <option value="3">Abu Dhabi</option>
+            <option value="3">Moscow</option>
+            <option value="3">London</option>
+            <option value="3">Berlin</option>
+         </select>
+         <br>
+         <div class="mb-3">
+                
+            <label  class="form-label">Which login method do you prefer?</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Password</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Pattern</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Fingerprint</label>
+            </div>
+        </div>
+         
+         <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,15}" disabled>
+            <div id="passHelp" class="form-text">Your pasword must be between 8 and 15 characters long, must contain atleast one number and one special character.</div>
+         </div>
+         
+         <br>
+         <div class="mb-3">
+            <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+            <input type="text" class="form-control" id="exampleInputPassword2" aria-describedby="emailHelp" required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,15}" disabled>
+            <div id="passHelp2" class="form-text">Please re-enter your password.</div>
+        </div>
+         
+         <br>
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Recieve marketing emails
+            </label>
+         </div>
+         <br>
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+            Remember me
+            </label>
+         </div>
+         <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked required>
+            <label class="form-check-label" for="flexCheckChecked">
+            Accept terms and conditions
+            </label>
+         </div>
+         
+
+         <br><br>
+         <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Form Submitted</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Your form has been submitted successfully!</p>
+                    </div>
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id = "okButton">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="failureModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Submission failed</h5>
+                        <button type="button" id = "succebutton" class="submit" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please fill in all the required fields correctly</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>     
+        <script>
+
+            document.querySelector('form').addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+                event.preventDefault();
+
+                // Perform form validation
+                if (this.checkValidity()) { //In an event, this refers to the element that received the event.
+                    var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                    successModal.show();
+                   // All fields are valid, show pop-up window
+                   
+                } else {
+                    var failureModal = new bootstrap.Modal(document.getElementById('failureModal'));
+                    failureModal.show();
+            }
+         });
+         document.getElementById('okButton').addEventListener('click', function() {
+                            // Reload the page
+                            location.reload();
+                         });
+
+         
+
+            window.addEventListener('DOMContentLoaded', (event) => {
+                var checkbox = document.getElementById("inlineRadio1");
+                var passwordInput = document.getElementById("exampleInputPassword1");
+                var confirmPasswordInput = document.getElementById("exampleInputPassword2");
+                var radioButtons = document.querySelectorAll('input[name="inlineRadioOptions"]');
+        
+                // Function to handle radio button change event
+                function handleRadioButtonChange() {
+                    if (checkbox.checked) {
+                        passwordInput.disabled = false;
+                        confirmPasswordInput.disabled = false;
+                    } else {
+                        passwordInput.disabled = true;
+                        confirmPasswordInput.disabled = true;
+                        confirmPasswordInput.classList.remove("invalid");
+                        confirmPasswordInput.value = "";
+                    }
+                }
+        
+                // Function to handle password validation
+                function validatePasswords() {
+                    if (passwordInput.value !== confirmPasswordInput.value) {
+                        confirmPasswordInput.classList.add("invalid");
+                    } else {
+                        confirmPasswordInput.classList.remove("invalid");
+                    }
+                }
+        
+                // Add event listener to each radio button
+                radioButtons.forEach(function (radioButton) {
+                    radioButton.addEventListener('change', handleRadioButtonChange);
+                });
+        
+                // Add event listener to confirm password input
+                confirmPasswordInput.addEventListener('keyup', validatePasswords);
+            });
+        </script>
+        
+        
+        
+   </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="allstyles/hpstyles.css" />
+
+
+</head>
+
+
+
+<body>
+
+<div class="header">
+<button class="buttonleft" onclick="navigate(event, 'index.html')">Back</button>
+<button class="buttonleft" onclick="navigate(event, 'index.html')">Here</button>
+<button class="buttonright" onclick="navigate(event, 'login.html')">Login</button>
+<button class="buttonright" onclick="navigate(event, 'signup.html')">Sign Up</button>
+<p id = "firstheading" style =  "Font-size:80px; line-height: 10pt;">Comets</p>
+<p id = "explaination" style =  "Font-size:20px; line-height: 2pt;">Here, you can find images and some general information about famous comets.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class= "lhs">
+<p id = "halleycomet" style =  "Font-size:30px; line-height: 2pt;">Halley's Comet</p>
+<p id = "halleyperson" style =  "Font-size:30px; line-height: 2pt;display:none;">Edmund Halley</p>
+<p id = "explaination" class = "explanation" >Halley's Comet, Comet Halley, or sometimes simply Halley, officially designated 1P/Halley, is a short-period comet visible from Earth every 75–79 years.[1] Halley is the only known short-period comet that is regularly visible to the naked eye from Earth, and thus the only naked-eye comet that can appear twice in a human lifetime.</p>
+<button class="buttonright" sid="Edmund" type="submit" onclick= "showperson(event, 'halleycomet', 'halleyperson', 'hc', 'ed')">Who discovered it?</button>
+
+<button class="buttonleft" sid="watch" type="submit"><a href="Watch.html">Watch</button>
+</div>
+
+<div class= "rhs">
+
+<img src="supplementary/halley.jpg" id = "hc" alt="Picture of the Halley's comet" style="width:400px;height:300px; margin-left: auto; margin-right: auto;">
+
+<img src="supplementary/edmund.jpeg" id = "ed" alt="W3Schools.com" style="width:300px;height:360px;display:none; margin-left: auto; margin-right: auto;">
+</div>
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+<div class= "rhs">
+<p id = "hbcomet" style =  "Font-size:30px; line-height: 2pt;">Hale–Bopp Comet</p>
+
+<p id = "hbperson" style =  "Font-size:30px; line-height: 2pt;display:none;">Alan Hale and Thomas Bopp</p>
+
+<p id = "hbexplaination" style =  "Font-size:20px; line-height: 30pt;">Comet Hale–Bopp is a comet that was one of the most widely observed of the 20th century and one of the brightest seen for many decades. Alan Hale and Thomas Bopp discovered Comet Hale–Bopp separately on July 23, 1995, before it became visible to the naked eye.</p>
+<button class="buttonleft" sid="HaleBopp" type="button" onclick= "showperson(event, 'hbcomet', 'hbperson', 'haleboppcomet', 'halebopp')">Who discovered it?</button>
+
+</div>
+
+
+<div class= "lhs">
+
+  <img src="supplementary/halebopp.jpeg" id = "haleboppcomet" alt="W3Schools.com" style="width:400px;height:300px; margin-left: auto; margin-right: auto;">
+
+  <img src="supplementary/haleboppperson.jpeg" id = "halebopp" alt="W3Schools.com" style="width:400px;height:300px;display:none; margin-left: auto; margin-right: auto;">
+
+  </div>
+
+
+<br>
+
+
+
+
+
+
+
+
+
+<div class= "lhs">
+
+  <p id = "shoecomet" style =  "Font-size:30px; line-height: 2pt;">Shoemaker Comet</p>
+  
+  <p id = "shoeperson" style =  "Font-size:30px; line-height: 2pt; display: none">Eugene Merle Shoemaker</p>
+  
+  <p id = "explaination" style =  "Font-size:20px; line-height: 30pt;">Comet Shoemaker–Levy 9 broke apart in July 1992 and collided with Jupiter in July 1994, providing the first direct observation of an extraterrestrial collision of Solar System objects. This generated a large amount of coverage in the popular media, and the comet was closely observed by astronomers worldwide. </p>
+  <button class="buttonleft" sid="Shoe" type="button" onclick= "showperson(event, 'shoecomet', 'shoeperson', 'shoecometimage', 'shoepersonimage')">Who discovered it?</button>
+  
+  </div>
+
+  
+<div class= "rhs">
+
+<img src="supplementary/shoemaker.jpg" id = "shoecometimage" alt="__" style="width:400px;height:300px; margin-left: auto; margin-right: auto;">
+<img src="supplementary/shoeperson.jpeg" id = "shoepersonimage" alt="__" style="width:400px;height:300px;display:none;margin-left: auto; margin-right: auto;">
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+
+function showperson(event, cometword, personword, cometpic, personpic)
+{
+event.preventDefault() 
+if (document.getElementById(cometword).style.display === "block")
+    {
+    document.getElementById(cometword).style.display = "none";
+    document.getElementById(personword).style.display = "block";
+    document.getElementById(cometpic).style.display = "none";
+    document.getElementById(personpic).style.display = "block";}
+else
+    {document.getElementById(cometword).style.display = "block";
+    document.getElementById(personword).style.display = "none";
+    document.getElementById(cometpic).style.display = "block";
+    document.getElementById(personpic).style.display = "none";}
+
+}
+
+
+function navigate(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+</script>
+
+
+
+</body>
+</html> 

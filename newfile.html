@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Fetch a file to change this text.</p>
+<img src="supplementary/China.png" id = "China" alt="China Moon Mission" style="width:200;height:100; margin-left: auto; margin-right: auto;margin-top: auto; margin-bottom: auto;">
+
+<script>
+
+let file = "MOCK_DATA.json"
+
+fetch (file)
+.then(x => x.json())
+.then(data => {
+    let firstFirstName = data[0].first_name; // Accessing the first_name property of the first object
+    document.getElementById("demo").innerHTML = firstFirstName;
+})
+.catch(error => {
+    document.getElementById("demo").innerHTML = error;
+});
+
+
+function displayProfileImage(objectId) {
+    let file = "MOCK_DATA.json";
+    
+    fetch(file)
+    .then(response => response.json())
+    .then(data => {
+        let matchingObject = data.find(obj => obj.id === objectId); // Find the object with the specified ID
+        if (matchingObject) {
+            let imageElement = document.getElementById(matchingObject.id);
+            if (imageElement) {
+                imageElement.src = matchingObject.profile_image;
+            }
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching the JSON file:', error);
+    });
+}
+
+// Call the function with the object ID to display the profile image
+displayProfileImage(1); // For "China" image
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="allstyles/moonstyles.css" />
+
+
+</head>
+
+
+
+<body>
+
+
+<div class= "header">
+    <p id = "hbcomet"   style =  "Font-size:50px; font-weight:100; line-height: 10pt; color: whitesmoke; opacity: 0.6; border-color: white; border-width: 5pt;">Exploring the Sun</p>
+    <p id = "hbperson" style =  "Font-size:12px; line-height: 10pt;color: whitesmoke; opacity: 0.6; border-color: white; border-width: 5pt;">Two active missions by Nasa and their details</p>
+</div>    
+
+
+<div class="sliding-window">
+    <div class="window-content">
+      <p style= "Font-size:20px; color: whitesmoke">Parker Solar Probe</p>
+   
+      <img src="supplementary/Parker.jpeg" id = "parker" alt="Picture of Parker Probe" style="width:90%;height:75%; margin-left: auto; margin-right: auto;margin-top: auto; margin-bottom: auto;">
+      <br>
+      <p style= "Font-size:15px; color: whitesmoke">NASA's Parker Solar Probe is on a mission to "touch the Sun." The spacecraft is flying closer to the Sun’s surface than any spacecraft before it. The mission will revolutionize our understanding of the Sun.
+        Parker will fly more than seven times closer to the Sun than any spacecraft.
+        Over seven years, the spacecraft will complete 24 orbits around the Sun.
+        At its closest approach, the spacecraft will come within about 3.9 million miles (6.2 million kilometers) of the Sun.</p>
+    </div>
+    <div class="window-content">
+        <p style= "Font-size:20px; color: whitesmoke">SOHO</p>
+     
+        <img src="supplementary/SOHO.jpeg" id = "SOHO" alt="SOHO spacecraft" style="width:90%;height:75%; margin-left: auto; margin-right: auto;margin-top: auto; margin-bottom: auto;">
+        <br>
+        <p style= "Font-size:15px; color: whitesmoke">SOHO is the longest-lived Sun-watching satellite to date. Numerous mission extensions have enabled the spacecraft to observe two 11-year solar cycles and to discover thousands of comets.
+
+            SOHO is a cooperative international project between ESA and NASA. NASA contributed three instruments and launch services. ESA leads the mission.
+            During its pioneering career, SOHO has returned a wealth of new information about the Sun—from its core to its outer atmosphere and the solar wind.
+            SOHO monitors the effects of space weather on our planet, and it plays a vital role in forecasting potentially dangerous solar storms.
+            SOHO is the most prolific discoverer of comets in astronomical history, with more than 3,000 tracked during encounters with the Sun.</p>
+    </div>
+    
+</div>
+  
+<div class = 'bottombuttons' >
+    <button class="buttonleft" id="Sun" type="button"  onclick= "redirect(event, 'Sun.html')">Sun</button>
+    <button class="buttonleft" id="Moon" type="button"  onclick= "redirect(event, 'Moon.html')">Moon</button>
+    <button class="buttonleft" id="Mars" type="button"  onclick= "redirect(event, 'Mars.html')">Mars</button>
+    <button class="buttonleft" id="Jupiter" type="button"  onclick= "redirect(event, 'Jupiter.html')">Jupiter</button>
+    <button class="buttonleft" id="Saturn" type="button"  onclick= "redirect(event)">Saturn</button>
+    <button class="buttonleft" id="Outer Space" type="button"  onclick= "redirect(event)">Outer Space</button>
+</div> 
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+window.onload = function() {
+    document.getElementById("hbcomet").style.transform = 'scale(1.5)';
+    document.getElementById("hbperson").style.transform = 'scale(1.5)';
+};
+
+
+function redirect(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+function showimage(event, link){
+    document.body.style.backgroundImage = 'url(' + link + ')';
+
+}
+
+function resetimage(event) {
+  document.body.style.backgroundImage = 'url("supplementary/updatesbackground.jpeg")';
+}
+
+
+function drop(event,word){
+    document.getElementById(word).style.transform = 'translate(50px,100px);';
+
+
+}
+
+
+function enhance(event,image){
+  event.preventDefault() 
+  document.getElementById(image).style.transform = 'scale(1.2)';
+
+}
+
+function smallagain(event,image){
+  event.preventDefault() 
+  document.getElementById(image).style.transform = 'scale(1)';
+
+}
+
+function showperson(event, cometword, personword, cometpic, personpic)
+{
+event.preventDefault() 
+if (document.getElementById(cometword).style.display === "block")
+    {
+    document.getElementById(cometword).style.display = "none";
+    document.getElementById(personword).style.display = "block";
+    document.getElementById(cometpic).style.display = "none";
+    document.getElementById(personpic).style.display = "block";}
+else
+    {document.getElementById(cometword).style.display = "block";
+    document.getElementById(personword).style.display = "none";
+    document.getElementById(cometpic).style.display = "block";
+    document.getElementById(personpic).style.display = "none";}
+
+}
+
+
+function navigate(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+</script>
+
+
+
+</body>
+</html> 

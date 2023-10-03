@@ -1,0 +1,387 @@
+body {
+    margin: 0px 0 0px 0px;
+    padding: 0;
+      text-align: center;
+      background-color: rgb(248, 202, 150);
+      
+      color: rgb(46, 45, 45);
+    Font-size:14px;
+    font-family:"Century Gothic", sans-serif;
+    font-weight: 10;
+    
+    
+    }
+
+    .signuppage{
+    margin: 70px 270px 70px 270px;
+    box-shadow: 5px 5px 50px 2px rgba(0,0,0,.8);
+    padding: 10px 10px 1px 10px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+      
+    color: rgb(46, 45, 45);
+    Font-size:14px;
+    font-family:"Century Gothic", sans-serif;
+    font-weight: 10;
+
+    }
+    
+    .formbody {
+
+        margin: 20px 20px 200px 20px;
+    }
+    .Signupnow{
+
+
+      font-size: 40px; 
+      text-align: left; 
+      color: rgb(201, 132, 42); 
+      position:inherit; 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px; 
+      margin-right: 120px;
+    }
+    .header {
+    margin: 0px;
+      padding: 20px;
+      text-align: center;
+      background: rgba(58, 53, 53, 0.8);
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      
+      color: white;
+      font-size: 14px;
+    }
+    
+    .explanation {
+    
+      line-height: 22pt;
+        font-size: 8px;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+    
+    
+      }
+
+    .valid-tooltip{
+
+        position: relative
+    }
+
+    .valid {
+        color: green;
+      }
+      
+      .valid:before {
+        position: relative;
+        left: -35px;
+        content: "✔";
+      }
+      
+      /* Add a red text color and an "x" when the requirements are wrong */
+      .invalid {
+        color: red;
+      }
+      
+      .invalid:before {
+        position: relative;
+        left: -35px;
+        content: "✖";
+      }
+      
+    
+    .buttonleft {
+      background-color: white;
+      border: 0.5px solid white;
+    border-radius: 4px;
+      color: rgb(65, 63, 63);
+      position: fixed;
+      top: 5px;
+      left: 10px;
+      padding: 6px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    font-family:"Century Gothic", sans-serif;
+      font-size: 14px;
+      margin: 4px 4px;
+      cursor: pointer;
+    }
+    
+    
+    
+    .buttonleft:hover {
+          background-color: white;
+    Opacity: 0.5;
+      border: 1px solid white;
+      color: black;
+    
+      font-size: 20px;
+      transition: 0.7s;
+      }
+    
+    .buttonright:hover {
+          background-color: white;
+    Opacity: 0.5;
+      border: 1px solid white;
+      color: black;
+    
+      font-size: 20px;
+      transition: 0.7s;
+      }
+    
+    
+    
+    .buttonright {
+        background-color: white;
+        border: 0.5px solid white;
+      border-radius: 4px;
+        color: rgb(65, 63, 63);
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        padding: 6px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      font-family:"Century Gothic", sans-serif;
+        font-size: 14px;
+        margin: 4px 4px;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    
+    #list{
+        margin-left: 90px;
+        
+    list-style:none;
+    margin: 20px 20px;
+       }
+    
+    
+    .buttonsinside {
+      background-color: transparent;
+      border: none;
+      color: white;
+    float: flex;
+      padding: 12px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    font-family:"Century Gothic", sans-serif;
+      margin: 4px 4px;
+      cursor: pointer;
+    }
+    
+    
+    
+    
+    .buttonsinside:hover {
+       
+      font-size: 20px;
+      transition: 0.7s;
+      }
+    
+    
+    
+      a {
+      
+        color: rgb(59, 59, 59);
+      
+        text-decoration: none;
+        
+      }
+      
+      
+      
+      
+      .a:hover {
+      
+        color: black;
+      
+        font-size: 12px;
+        transition: 0.7s;
+        }
+    
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Style the dropdown button */
+        .dropdown button {
+          background-color: #ffffff;
+          border: 0.5px solid white;
+          border-radius: 4px;
+          color: rgb(65, 63, 63);
+          position: fixed;
+          top: 5px;
+          right: 10px;
+          padding: 6px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-family:"Century Gothic", sans-serif;
+          font-size: 14px;
+          margin: 4px 4px;
+          cursor: pointer;
+        }
+
+
+
+        
+        /* Style the dropdown content (hidden by default) */
+        .dropdown-content {
+          display: none;
+          position: fixed;
+          right: 10px;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+          z-index: 1;
+        }
+        
+        /* Style the dropdown links */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+          background-color: #f1f1f1;
+          transition: 1s;
+        }
+        
+        /* Show the dropdown menu when the dropdown button is hovered over */
+        .dropdown:hover .dropdown-content {
+          display: block;
+          transition: 5s;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    .image-section {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .section-style {
+      margin-right: 25px;
+      margin-left: 25px;
+      background-color: white;
+    }
+    
+    
+
+  @media only screen and (max-width: 1000px) 
+  {
+
+    .body {
+            
+        Font-size:12px;
+    }
+
+    .signuppage
+    {
+      margin: 80px 70px 20px 70px;
+      Font-size:12px;
+    }
+    
+
+    .Signupnow
+    {
+    font-size: 30px; 
+    text-align: left; 
+    color: rgb(201, 132, 42); 
+    position:inherit; 
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px; 
+    margin-right: 70px;
+    }
+
+    .header {
+      margin: 0px;
+        padding: 20px;
+        text-align: center;
+        background: rgba(58, 53, 53, 0.8);
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        
+        color: white;
+        font-size: 8px;
+      }
+  
+    }
+  
+    
+    @media only screen and (max-width: 500px) 
+    {
+
+        .body {
+            
+            Font-size:10px;}
+
+
+      .signuppage
+      {
+        margin: 70px 30px 10px 30px;
+        Font-size:10px;
+      }
+      
+      .Signupnow
+      {
+
+
+      font-size: 20px; 
+      text-align: left; 
+      color: rgb(201, 132, 42); 
+      position:inherit; 
+      margin-top: 0px;
+      margin-bottom: 10px;
+      margin-left: 10px; 
+      margin-right: 30px;
+      }
+
+      .header {
+        margin: 0px;
+          padding: 20px;
+          text-align: center;
+          background: rgba(58, 53, 53, 0.8);
+          position: fixed;
+          top: 0px;
+          width: 100%;
+          
+          color: white;
+          font-size: 8px;
+        }
+    
+    
+    
+    
+  }

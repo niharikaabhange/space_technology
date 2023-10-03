@@ -1,0 +1,25 @@
+[{
+    "username": "saraseager",
+    "firstName": "Sara",
+    "lastName": "Seager",
+    "gender": "Female",
+    "profileURL": "supplementary/Scientist1.jpeg",
+    "info": "Professor Sara Seager is an astrophysicist and a Professor of Physics, Professor of Planetary Science, and a Professor of Aeronautics and Astronautics at the Massachusetts Institute of Technology where she holds the Class of 1941 Professor Chair.  She has been a pioneer in the vast and unknown world of exoplanets, planets that orbit stars other than the sun. Her ground-breaking research ranges from the detection of exoplanet atmospheres to innovative theories about life on other worlds to development of novel space mission concepts."
+},
+{
+    "username": "maejemison",
+    "firstName": "Mae",
+    "lastName": "Jemison",
+    "gender": "Female",
+    "profileURL": "supplementary/Scientist3.jpeg",
+    "info": "Mae Carol Jemison (born October 17, 1956) is an American engineer, physician, and former NASA astronaut. She became the first African-American woman to travel into space when she served as a mission specialist aboard the Space Shuttle Endeavour in 1992. Jemison joined NASA's astronaut corps in 1987 and was selected to serve for the STS-47 mission, during which the Endeavour orbited the Earth for nearly eight days on September 12–20, 1992."
+},
+{
+    "username": "saraseager",
+    "firstName": "Frank",
+    "lastName": "Drake",
+    "gender": "Female",
+    "profileURL": "supplementary/Scientist2.jpeg",
+    "info": "Born on May 28, 1930, in Chicago, Illinois, Drake showed an early interest in electronics and chemistry. Drake first considered the possibility of life existing on other planets as an eight-year-old, after conjecturing that if human civilization was the result of chance then civilizations might also exist elsewhere in the universe. He enrolled at Cornell University on a Navy Reserve Officer Training Corps scholarship.Once there he began studying astronomy. His ideas about the possibility of extraterrestrial life were reinforced by a lecture from astrophysicist Otto Struve in 1951.After receiving a B.A. in Engineering Physics, Drake served briefly as an electronics officer on the heavy cruiser USS Albany. He then went on to graduate school at Harvard University from 1952 to 1955 where he received a M.S. and Ph.D. in Astronomy. His doctoral advisor was Cecilia Payne-Gaposchkin."
+}
+]

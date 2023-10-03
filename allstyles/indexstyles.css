@@ -1,0 +1,513 @@
+
+
+body {
+margin: 0;
+padding: 0;
+text-align: center;
+background-image: url("../supplementary/background.jpeg");
+color: white;
+Font-size:50px;
+font-family:"Century Gothic", sans-serif;
+font-weight: 10;
+
+
+}
+
+div {
+  
+text-align: center;
+}
+
+.heading1 {
+font-size: 60px;
+text-align: center;
+margin-top: 100px;
+}
+
+.subheading {
+font-size: 20px;
+text-align: center;
+}
+
+.header {
+margin: 0px;
+  padding: 80px 0;
+  text-align: center;
+  background: rgba(255, 255, 255, .08);
+  
+  color: white;
+  font-size: 30px;
+}
+
+
+.buttonleft {
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 4px;
+  color: white;
+float: left;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+font-family:"Century Gothic", sans-serif;
+  font-size: 2px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+.buttonleft:hover {
+      background-color: white;
+Opacity: 0.5;
+  border: 1px solid white;
+  color: black;
+
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+.buttonright:hover {
+      background-color: white;
+Opacity: 0.5;
+  border: 1px solid white;
+  color: black;
+
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+
+
+.buttonright {
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 4px;
+  color: white;
+float: right;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+font-family:"Century Gothic", sans-serif;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+.buttonleftbottom {
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 4px;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+font-family:"Century Gothic", sans-serif;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+.buttonleftbottom:hover {
+      background-color: white;
+Opacity: 0.5;
+  border: 0.5px solid white;
+  border-radius: 4px;
+  color: black;
+
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+.buttonrightbottom:hover {
+      background-color: white;
+Opacity: 0.5;
+  border: 0.5px solid white;
+  color: black;
+
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+
+
+.buttonrightbottom {
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 4px;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+font-family:"Century Gothic", sans-serif;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+.searchbar
+{
+  border: 1px  blue;
+    border-radius: 30px;
+    height: 50px;
+    width: 70%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+Opacity: 0.5;
+
+}
+
+
+.searchbar:hover, .searchbar:focus {
+    border: none;
+    background-color: white;
+Opacity: 0.8;
+Transition: 1s;
+  }
+
+input[type=text] {
+      width: 50%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+   /* When the input field gets focus,
+        change its width to 100% */
+   input[type=text]:focus {
+     width: 70%;
+   }
+
+
+.animals
+   {Font-size:30px;
+    font-family:"Century Gothic", sans-serif;
+    font-weight: 5;
+    
+    display: inline;
+    list-style:none;
+    margin: 100px 20px;
+   }
+
+
+#list{
+padding-inline-start: 0px;
+list-style:none;
+margin: 20px 20px;
+   }
+
+
+.buttonsinside {
+  background-color: transparent;
+  border: none;
+  color: white;
+float: flex;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+font-family:"Century Gothic", sans-serif;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+
+.buttonsinside:hover {
+   
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+
+
+a {
+    
+    text-decoration: none;
+    
+color: rgb(226, 226, 226);
+}
+
+
+
+
+
+
+
+
+.image-section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-style {
+  margin-right: 25px;
+  margin-left: 25px;
+  background-color: white;
+}
+
+
+/* ----------------------------------Styles for mobile devices ---------------------------------*/
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 20px;
+  }
+
+  .header {
+    padding-top: 10px;
+padding-top: 10px;
+padding-top: 10px;
+padding-top: 10px;
+    font-size: 24px;
+  }
+
+.heading1 {
+font-size: 40px;
+text-align: center;
+margin-top: 50px;
+}
+
+
+.subheading {
+  line-height: 12pt;
+font-size: 10px;
+text-align: center;
+margin-top: 10px;
+margin-left: 4%;
+margin-right: 4%;
+}
+
+  .buttonleft,
+  .buttonright, 
+  .buttonleftbottom,
+  .buttonrightbottom {
+    padding: 5px 8px;
+    font-size: 8px;
+margin: 40 auto;
+  }
+  .buttonsinside{
+    font-size: 10px;
+  }
+
+  .searchbar {
+    width: 100%;
+    height: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+
+.searchbar:hover, .searchbar:focus {
+  border: none;
+  background-color: white;
+Opacity: 0.8;
+Transition: 1s;
+}
+
+input[type=text] {
+    width: 50%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+ }
+
+ /* When the input field gets focus,
+      change its width to 100% */
+ input[type=text]:focus {
+   width: 70%;
+ }
+  #list{
+
+    margin: 20% 4% 5% 4%;
+       }
+  .animals {
+    margin-left: 0;
+  }
+
+
+}
+
+/* --------------------------------Styles for tablets and larger screens-----------------------------*/
+@media only screen and (min-width: 768px ) {
+  body {
+    font-size: 3px;
+  }
+
+  .header {
+padding-top: 20px;
+padding-bottom: 50px;
+padding-left: 70px;
+padding-right: 70px;
+font-size: 30px;
+  }
+
+  .buttonleft,
+  .buttonright {
+    
+    font-size: 16px;
+    margin: 5px 5px 20px 5px;
+
+  }
+
+  .heading1 {
+    line-height: 30pt;
+    font-size: 70px;
+    text-align: center;
+    /*margin-top: 10px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    }
+
+
+  .subheading {
+  line-height: 22pt;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .wrapper{
+    padding-top:  20%;
+  }
+
+ 
+.searchbar:hover, .searchbar:focus {
+  border: none;
+  background-color: white;
+Opacity: 0.8;
+Transition: 1s;
+}
+
+input[type=text] {
+    width: 50%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+ }
+
+ /* When the input field gets focus,
+      change its width to 100% */
+ input[type=text]:focus {
+   width: 70%;
+ }
+
+  .searchbar {
+    width: 70%;
+    max-width: 400px;
+    padding: 2px 23px 2px 30px;
+  }
+  #list{
+  padding-top: 20px;
+  padding-bottom: 20%;
+  padding-left: 70px;
+  padding-right: 70px;
+  }
+}
+
+/* --------------------------------Styles for computer-----------------------------*/
+
+
+@media only screen and (min-width: 1000px ) {
+  body {
+    font-size: 3px;
+  }
+
+  .header {
+
+padding-top: 20px;
+padding-bottom: 50px;
+padding-left: 70px;
+padding-right: 70px;
+font-size: 30px;
+  }
+
+  .buttonleft,
+  .buttonright {
+    padding: 12px 30px;
+    font-size: 16px;
+    margin: 5px 5px 20px 5px;
+  }
+
+  .heading1 {
+    line-height: 30pt;
+    font-size: 70px;
+    text-align: center;
+    /*margin-top: 10px;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 70px;
+    padding-right: 70px;
+    }
+
+
+  .subheading {
+  line-height: 22pt;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .wrapper{
+    padding-top:  5%;
+  }
+
+
+  .searchbar:hover, .searchbar:focus {
+    border: none;
+    background-color: white;
+Opacity: 0.8;
+Transition: 1s;
+  }
+
+input[type=text] {
+      width: 50%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+   /* When the input field gets focus,
+        change its width to 100% */
+   input[type=text]:focus {
+     width: 70%;
+   }
+
+
+  .searchbar {
+    width: 70%;
+    max-width: 400px;
+    padding: 2px 23px 2px 30px;
+  }
+  #list{
+    padding-top: 20px;
+    padding-bottom: 10%;
+    padding-left: 70px;
+    padding-right: 70px;
+    }
+
+}
+
+

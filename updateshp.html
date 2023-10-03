@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="allstyles/updatestyles.css" />
+
+
+</head>
+
+
+
+<body>
+
+
+<div class= "rhs">
+    <p id = "hbcomet"   style =  "Font-size:60px; font-weight:100; line-height: 2pt; color: whitesmoke; opacity: 0.6; border-color: white; border-width: 5pt;">Latest Space Technology Updates</p>
+    <p id = "hbperson" style =  "Font-size:30px; line-height: 10pt;color: whitesmoke; opacity: 0.6; border-color: white; border-width: 5pt;">Find out whats happening in space technology and exploration.</p>
+</div>    
+<div class = 'bottombuttons' >
+    <button class="buttonleft" id="Sun" type="button" onmouseover= 'showimage( event , "supplementary/Sun.jpeg")' onmouseout="resetimage(event)" onclick= "redirect(event, 'Sun.html')">Sun</button>
+    <button class="buttonleft" id="Moon" type="button" onmouseover= 'showimage( event , "supplementary/Moon.jpeg")' onmouseout="resetimage(event)" onclick= "redirect(event, 'Moon.html')">Moon</button>
+    <button class="buttonleft" id="Mars" type="button" onmouseover= 'showimage( event , "supplementary/Mars.jpeg")' onmouseout="resetimage(event)" onclick= "redirect(event, 'Mars.html')">Mars</button>
+    <button class="buttonleft" id="Jupiter" type="button" onmouseover= 'showimage( event , "supplementary/Jupiter.jpeg")' onmouseout="resetimage(event)" onclick= "redirect(event, 'Jupiter.html')">Jupiter</button>
+    <button class="buttonleft" id="Saturn" type="button" onmouseover= 'showimage( event , "supplementary/Saturn.jpeg")' onmouseout="resetimage(event)" onclick= "redirect(event)">Saturn</button>
+    <button class="buttonleft" id="Outer Space" type="button" onmouseover= 'showimage( event , "supplementary/Outer.jpeg")' onmouseout="resetimage(event)" onclick= "redirect(event)">Outer Space</button>
+</div> 
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+window.onload = function() {
+    document.getElementById("hbcomet").style.transform = 'scale(1.2)';
+};
+
+
+function redirect(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+function showimage(event, link){
+    document.body.style.backgroundImage = 'url(' + link + ')';
+
+}
+
+function resetimage(event) {
+  document.body.style.backgroundImage = 'url("supplementary/updatesbackground.jpeg")';
+}
+
+
+function drop(event,word){
+    document.getElementById(word).style.transform = 'translate(50px,100px);';
+
+
+}
+
+
+function enhance(event,image){
+  event.preventDefault() 
+  document.getElementById(image).style.transform = 'scale(1.2)';
+
+}
+
+function smallagain(event,image){
+  event.preventDefault() 
+  document.getElementById(image).style.transform = 'scale(1)';
+
+}
+
+function showperson(event, cometword, personword, cometpic, personpic)
+{
+event.preventDefault() 
+if (document.getElementById(cometword).style.display === "block")
+    {
+    document.getElementById(cometword).style.display = "none";
+    document.getElementById(personword).style.display = "block";
+    document.getElementById(cometpic).style.display = "none";
+    document.getElementById(personpic).style.display = "block";}
+else
+    {document.getElementById(cometword).style.display = "block";
+    document.getElementById(personword).style.display = "none";
+    document.getElementById(cometpic).style.display = "block";
+    document.getElementById(personpic).style.display = "none";}
+
+}
+
+
+function navigate(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+</script>
+
+
+
+</body>
+</html> 

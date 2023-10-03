@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Style the dropdown button */
+    .dropdown button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* Style the dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Style the dropdown links */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+    /* Show the dropdown menu when the dropdown button is hovered over */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+   
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .box {
+    width: 300px; /* Adjust the width as per your requirements */
+    height: 300px; /* Adjust the height as per your requirements */
+    background-color: #ccc; /* Adjust the background color as per your preferences */
+    margin-right: 10px; /* Adjust the spacing between boxes as per your preferences */
+    flex-shrink: 0;
+  }
+
+  .para{
+    position: fixed;
+    margin-top: 300;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #f9f9f9;
+    opacity: 1;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button>Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#">Option 1</a>
+      <a href="#">Option 2</a>
+      <a href="#">Option 3</a>
+    </div>
+  </div>
+
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="box">
+        <img src="supplementary/shoemaker.jpg" id = "shoecometimage" alt="__" style="width:300px ;height:300px;">
+        </div>
+      <div class="box"><img src="supplementary/shoemaker.jpg" id = "shoecometimage" alt="__" style="width:300px ;height:300px;">
+
+      <div class="para"> hellloooooooooo</div>
+      </div>
+
+      <div class="box"><img src="supplementary/shoemaker.jpg" id = "shoecometimage" alt="__" style="width:300px ;height:300px;">
+      </div>
+      <div class="box"><img src="supplementary/shoemaker.jpg" id = "shoecometimage" alt="__" style="width:300px ;height:300px;">
+      </div>
+      <div class="box"><img src="supplementary/shoemaker.jpg" id = "shoecometimage" alt="__" style="width:300px ;height:300px;">
+      </div>
+      <div class="box"><img src="supplementary/shoemaker.jpg" id = "shoecometimage" alt="__" style="width:300px ;height:300px;">
+      </div>
+    </div>
+  </div>
+  <script>
+    function slide() {
+      const slider = document.querySelector('.slider');
+      slider.style.transform = 'translateX(-210px)'; /* Adjust the slide distance as per your requirements */
+      // Adjust the transform value to slide to the next box
+      // You can use CSS transitions or other animation techniques for smoother sliding
+    }
+  
+    setInterval(slide, 2000); // Adjust the interval time as per your requirements
+  </script>
+  
+</body>
+</html>

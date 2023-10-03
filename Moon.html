@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="allstyles/moonstyles.css" />
+
+</head>
+
+
+
+<body>
+
+
+<div class= "header">
+    <p id = "hbcomet"   style =  "Font-size:50px; font-weight:100; line-height: 10pt; color: whitesmoke; opacity: 0.6; border-color: white; border-width: 5pt;">Global Lunar Missions</p>
+    <p id = "hbperson" style =  "Font-size:12px; line-height: 10pt;color: whitesmoke; opacity: 0.6; border-color: white; border-width: 5pt;">Find out whats happening in space technology and exploration.</p>
+</div>    
+
+
+<div class="sliding-window">
+    <div class="window-content">
+      <p style= "Font-size:20px; color: whitesmoke">India Launches the Chandrayaan 3</p>
+   
+      <img src="supplementary/chandrayaan.jpeg" id = "chandrayaan" alt="Picture of chandrayaan 3" style="width:90%;height:75%; margin-left: auto; margin-right: auto;margin-top: auto; margin-bottom: auto;">
+      <br>
+      <p style= "Font-size:15px; color: whitesmoke">The Indian Space Research Organisation (Isro) has successfully raised the orbit of the Chandrayaan-3 mission for the second time. The Orbit-Raising Maneuver has ensured that the spacecraft is now flying at a perigee of just over 200 kilometers. To achieve the precise altitude required to escape Earth's gravitational pull and embark on its journey toward the Moon, the Indian space agency will perform three more Earth-Bound Maneuvers.</p>
+    </div>
+    <div class="window-content">
+        <p style= "Font-size:20px; color: whitesmoke">China's preliminary crewed lunar landing plan</p>
+     
+        <img src="supplementary/China.png" id = "China" alt="China Moon Mission" style="width:90%;height:75%; margin-left: auto; margin-right: auto;margin-top: auto; margin-bottom: auto;">
+        <br>
+        <p style= "Font-size:15px; color: whitesmoke">China is formalizing its plans to land a pair of astronauts on the surface of the moon before the end of the decade.
+
+            A preliminary plan to put two astronauts on the moon for a short period to conduct scientific tasks and collect samples was presented by Zhang Hailian, deputy chief designer with the China Manned Space Agency (CMSA), at the 9th China (International) Commercial Aerospace Forum in Wuhan, Hubei province, July 12.</p>
+    </div>
+    <div class="window-content">
+        <p style= "Font-size:20px; color: whitesmoke">Russia – Luna 25</p>
+
+        <img src="supplementary/Russia.jpeg" id = "russia" alt="Picture of Russia – Luna 25" style="width:90%;height:80%; margin-left: auto; margin-right: auto;margin-top: auto; margin-bottom: auto;">
+        <br>
+        <p style= "Font-size:15px; color: whitesmoke">Russia is taking an ambitious step forward in its space exploration efforts with the Luna 25 mission (also known as Luna-Glob, or Luna-Resurs). The program, spearheaded by Roscosmos and expected to launch in 2023, will be Russia’s first attempt at establishing a permanent presence on the Moon.
+
+            The mission aims to land a rover on the lunar surface and conduct scientific experiments to study the lunar surface and atmosphere.
+            
+            The mission is currently scheduled to launch in 2023, although the exact timeline may change as Russia’s disastrous intervention in Ukraine has had a crippling effect on its country’s tech and advanced industrial sectors.</p>
+    </div>
+  </div>
+
+<div class = 'bottombuttons' >
+    <button class="buttonleft" id="Sun" type="button"  onclick= "redirect(event, 'Sun.html')">Sun</button>
+    <button class="buttonleft" id="Moon" type="button"  onclick= "redirect(event, 'Moon.html')">Moon</button>
+    <button class="buttonleft" id="Mars" type="button"  onclick= "redirect(event, 'Mars.html')">Mars</button>
+    <button class="buttonleft" id="Jupiter" type="button"  onclick= "redirect(event, 'Jupiter.html')">Jupiter</button>
+    <button class="buttonleft" id="Saturn" type="button"  onclick= "redirect(event)">Saturn</button>
+    <button class="buttonleft" id="Outer Space" type="button"  onclick= "redirect(event)">Outer Space</button>
+</div> 
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+fetch ("ohoh.jpeg")
+.then(y => document.getElementById("chandrayaan").src = y);
+
+window.onload = function() {
+    document.getElementById("hbcomet").style.transform = 'scale(1.5)';
+    document.getElementById("hbperson").style.transform = 'scale(1.5)';
+};
+
+
+function redirect(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+function showimage(event, link){
+    document.body.style.backgroundImage = 'url(' + link + ')';
+
+}
+
+function resetimage(event) {
+  document.body.style.backgroundImage = 'url("supplementary/updatesbackground.jpeg")';
+}
+
+
+function drop(event,word){
+    document.getElementById(word).style.transform = 'translate(50px,100px);';
+
+
+}
+
+
+function enhance(event,image){
+  event.preventDefault() 
+  document.getElementById(image).style.transform = 'scale(1.2)';
+
+}
+
+function smallagain(event,image){
+  event.preventDefault() 
+  document.getElementById(image).style.transform = 'scale(1)';
+
+}
+
+function showperson(event, cometword, personword, cometpic, personpic)
+{
+event.preventDefault() 
+if (document.getElementById(cometword).style.display === "block")
+    {
+    document.getElementById(cometword).style.display = "none";
+    document.getElementById(personword).style.display = "block";
+    document.getElementById(cometpic).style.display = "none";
+    document.getElementById(personpic).style.display = "block";}
+else
+    {document.getElementById(cometword).style.display = "block";
+    document.getElementById(personword).style.display = "none";
+    document.getElementById(cometpic).style.display = "block";
+    document.getElementById(personpic).style.display = "none";}
+
+}
+
+
+function navigate(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+</script>
+
+
+
+</body>
+</html> 

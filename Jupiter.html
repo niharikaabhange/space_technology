@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="allstyles/jupiterstyles.css" />
+
+
+</head>
+
+
+
+<body>
+
+    <div class="header">
+        <div  id = 'dropdown'>
+            <button class="buttonleft" onmouseover="displaycontent(event, 'dropdowncontent')" >Menu</button>
+            <div class="dropdown-content" id = 'dropdowncontent' onmouseleave="removecontent(event, 'dropdowncontent')">
+              <a href="updateshp.html">Homepage</a>
+              <a href="signup.html">Sign Up</a>
+              <a href="login.html">Log In</a>
+              <a href="Moon.html">Moon</a>
+              <a href="Sun.html">Sun</a>
+              <a href="Jupiter.html">Jupiter</a>
+              <a href="Saturn.html">Saturn</a>
+              <a href="Outer Space.html">Outer Space</a>
+              <a href="Read copy.html">Comets</a>
+              <a href="index.html">Webpage</a>
+              
+            </div>
+        </div>
+       
+<button class="buttonleft" onclick="myFunction()">Back</button>
+<button class="buttonright" onclick="navigate(event, 'login.html')">Login</button>
+<button class="buttonright" onclick="navigate(event, 'signup.html')">Sign Up</button>
+
+
+
+</div>
+
+
+
+
+
+    
+
+<div class = 'content'>
+
+
+
+
+    <div class= "lhs">
+        <br>
+    <p id = "marsmission" style =  "Font-size:40px; line-height: 40pt; color: rgb(88, 49, 4);">Exploring Jupiter:</p>
+    <p id = "inaction" style =  "Font-size:40px; line-height: 40pt;color: rgb(88, 49, 4);">1970 to 2023</p>
+    <br>
+    </div>
+    
+    <div class= "rhs">
+    
+        <div class="container">
+            
+            <img src="supplementary/JupiExploration.jpeg" id = "hc" alt="Maven" style="margin-top: 40px; margin-left: auto; margin-right: auto; ">
+            
+            <p class="hidden-text" style= "Font-size:20px; color: rgb(226, 225, 225)">A TIMELINE: We have explored Jupiter for decades via both passing spacecraft (flybys) and spacecraft positioned in orbit around the planet. Our exploration began in the 1970s with NASA’s Pioneer programme, and continues today with NASA’s Juno and Europa Clipper missions and ESA’s Juice.</p>
+        </div>
+    </div>
+
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+          <img src="supplementary/jupi1.jpeg" alt="Image 1" >
+          <img src="supplementary/jupi2.jpeg" alt="Image 2">
+          <img src="supplementary/jupi3.jpeg" alt="Image 3">
+          <img src="supplementary/jupi4.jpeg" alt="Image 4">
+          
+          <!-- Add more images here as needed -->
+         </div>
+    </div>
+
+
+    
+    <div class="container" style="margin-left: 40px;margin-top: 30px;">
+        
+        <img src="supplementary/PastOrbiters.jpeg" id = "hc" alt="ExoMars" style="margin-top: 15px;margin-left: auto; margin-right: auto; align-self: center; ">
+            <p  style= "line-height: 30pt; position: absolute; top: 10%; left: 20%; transform: translate(-50%, -50%);
+            color: white; padding: 10px; font-size: 60px; z-index: 1;">Past Orbiters</p>
+            
+            <p class="hidden-text" style= "Font-size:20px; color: rgb(226, 225, 225)">NASA’s Galileo spacecraft was the first to orbit the gas giant (from 1995–2003), and the first dedicated craft to head to Jupiter. Galileo provided a wealth of information on Jupiter and its major moons and deployed a probe down into the planet’s atmosphere (a mission ‘first’).
+
+                Galileo found that Europa has a global ocean of liquid water beneath its icy surface, and suggested that Ganymede and Callisto may have subsurface water, too. The mission discovered that Ganymede creates its own magnetic field (the first moon known to do so); that Io’s volcanic activity may be 100 times greater than Earth’s; that Io’s dynamic atmosphere is coupled to Jupiter’s in complex ways; that Europa, Ganymede and Callisto have thin atmospheres; and that Jupiter’s rings contain material from the planet’s inner moons. Galileo’s probe measured the composition of Jupiter’s atmosphere, finding evidence that the planet has evolved significantly since it formed, and spotted signs of massive thunderstorms that dwarf anything seen on Earth.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+<div class= "lhs">
+
+    <div class="container">
+        <p  style= "line-height: 30pt; position: absolute; top: 5%;left: 30%;  transform: translate(-50%, -50%);
+            color: white; padding: 10px; font-size: 50px; z-index: 1;">EUROPA CLIPPER</p>
+        <img src="supplementary/Curiosity.jpeg" id = "cu" alt="Curiosity" style="margin-top: 30px; margin-left: auto; margin-right: auto; ">
+        
+        <p class="hidden-text" style= "Font-size:15px; color: rgb(226, 225, 225)">The mission will place a spacecraft in orbit around Jupiter in order to perform a detailed investigation of Europa -- a world that shows strong evidence for an ocean of liquid water beneath its icy crust and which could host conditions favorable for life. The mission will send a highly capable, radiation-tolerant spacecraft into a long, looping orbit around Jupiter to perform repeated close flybys of the icy moon.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class= "rhs" style=  " padding-left: 10px; padding-right: 5px;">
+
+  <p id = "shoecomet" style =  "Font-size:30px; line-height: 2pt;">CURRENT MISSIONS</p>
+
+  
+  <p id = "explaination" style =  "Font-size:15px; line-height: 30pt;">Currently, there is one mission operating at Jupiter: NASA’s Juno orbiter.
+
+    Juno arrived at Jupiter in 2016 to explore how Jupiter formed and evolved, map the planet’s core and magnetic field, measure the composition of Jupiter’s atmosphere, and observe the planet’s striking auroras. The probe has completed dozens of close flybys of Jupiter since its arrival and performed the closest flyby of Ganymede since Galileo, also characterising Jupiter’s atmospheric and magnetic dynamics, discovering a new radiation belt, detecting lightning, cyclones, and surprising features in Jupiter’s auroras, measuring the planet’s water, mapping its internal structure and envelope of gas, and more. More on Juno's discoveries so far.</p>
+  
+</div>
+
+
+
+
+
+
+
+<br>
+
+
+
+</div>
+  
+
+
+
+
+<script>
+
+const carouselTrack = document.querySelector(".carousel-track");
+const carouselImages = document.querySelectorAll(".carousel-track img");
+
+let currentIndex = 0;
+const slideInterval = 2000; // 10 seconds
+
+function nextSlide() {
+  if (currentIndex === carouselImages.length - 3){
+    
+    currentIndex = -1;
+  }
+  currentIndex = (currentIndex + 1) % carouselImages.length;
+  const offset = -currentIndex * carouselImages[0].clientWidth;
+  carouselTrack.style.transform = `translateX(${offset}px)`;
+  
+
+}
+
+setInterval(nextSlide, slideInterval);
+
+function myFunction() {
+  window.history.back();
+}
+
+window.onload = function() {
+    document.getElementById("marsmission").style.transform = 'scale(2.0)';
+    document.getElementById("inaction").style.transform = 'scale(2.0)';
+};
+
+function displaycontent(event, showthis){
+    event.preventDefault() 
+    document.getElementById(showthis).style.display = "block"
+    //document.body.style.backgroundImage = 'url(' + link + ')';
+}
+
+
+function removecontent(event, removethis){
+    event.preventDefault() 
+    document.getElementById(removethis).style.display = "none"
+}
+
+
+function showperson(event, cometword, personword, cometpic, personpic)
+{
+event.preventDefault() 
+if (document.getElementById(cometword).style.display === "block")
+    {
+    document.getElementById(cometword).style.display = "none";
+    document.getElementById(personword).style.display = "block";
+    document.getElementById(cometpic).style.display = "none";
+    document.getElementById(personpic).style.display = "block";}
+else
+    {document.getElementById(cometword).style.display = "block";
+    document.getElementById(personword).style.display = "none";
+    document.getElementById(cometpic).style.display = "block";
+    document.getElementById(personpic).style.display = "none";}
+
+}
+
+
+function navigate(event, link) {
+    event.preventDefault();
+    window.location.href = link;
+  }
+
+</script>
+
+
+
+</body>
+</html> 

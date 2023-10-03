@@ -1,0 +1,221 @@
+body {
+margin: 0;
+        padding: 0;
+  text-align: center;
+  background-color: black;
+  
+  color: white;
+Font-size:50px;
+font-family:"Century Gothic", sans-serif;
+font-weight: 10;
+
+
+}
+
+
+
+div {
+  margin-top: 12px;
+}
+
+div.lhs {
+  height: 400px;
+  width: 48%;
+text-align: center;
+Float: left;
+Margin:10px 20px;
+  background-color: transparent;
+}
+
+div.rhs {
+Float : right;
+  height: 400px;
+text-align: center;
+  width: 48%;
+Margin:10px 20x;
+  background-color: transparent;
+}
+
+.header {
+margin: 0px;
+  padding: 60px;
+  text-align: center;
+  background: rgba(255, 255, 255, .08);
+
+  color: white;
+  font-size: 30px;
+}
+
+.explanation {
+
+  line-height: 22pt;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+
+  }
+
+.buttonleft {
+  background-color: transparent;
+  border: 0.5px solid white;
+border-radius: 10px;
+  color: white;
+  float: left;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+font-family:"Century Gothic", sans-serif;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+.buttonleft:hover {
+      background-color: white;
+Opacity: 0.5;
+  border: 1px solid white;
+  color: black;
+
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+.buttonright:hover {
+      background-color: white;
+Opacity: 0.5;
+  border: 1px solid white;
+  color: black;
+
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+
+
+.buttonright {
+  background-color: transparent;
+  border: 0.5px solid white;
+border-radius: 10px;
+  color: white;
+float: right;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+font-family:"Century Gothic", sans-serif;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+.enhancedimages {
+  transition: transform 0.3s ease; /* Define the transition properties */
+}
+
+#list{
+    margin-left: 90px;
+    
+list-style:none;
+margin: 20px 20px;
+   }
+
+
+.buttonsinside {
+  background-color: transparent;
+  border: none;
+  color: white;
+float: flex;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+font-family:"Century Gothic", sans-serif;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+
+
+
+
+.buttonsinside:hover {
+   
+  font-size: 20px;
+  transition: 0.7s;
+  }
+
+
+
+a {
+  color: white;
+
+  text-decoration: none;
+  
+}
+
+
+
+
+.a:hover {
+
+  color: rgb(0, 0, 0);
+
+  font-size: 12px;
+  transition: 0.7s;
+  }
+
+
+
+.image-section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-style {
+  margin-right: 25px;
+  margin-left: 25px;
+  background-color: white;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+div.lhs {
+  
+  width: 95%;
+text-align: center;
+padding-bottom: 20px;
+padding-top: 20px;
+
+Margin:10px 10px;
+  background-color: transparent;
+}
+
+div.rhs {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+text-align: center;
+  width: 95%;
+Margin:10px 10px;
+  background-color: transparent;
+}
+
+}
+
+
+
+
+
+

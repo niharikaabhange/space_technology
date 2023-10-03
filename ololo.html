@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <div id="dataDisplay"></div>
+
+    <script>
+        fetch('ohoh.json')
+            .then(response => response.json())
+            .then(data => {
+                displayData(data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+
+        function displayData(data) {
+            const dataDisplay = document.getElementById('dataDisplay');
+
+            data.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.innerHTML = `
+                    <h2>${item.name}</h2>
+                    <p>Email: ${item.email}</p>
+                    <p>City: ${item.city}</p>
+                    <!-- Add more fields as needed -->
+                `;
+                dataDisplay.appendChild(itemElement);
+            });
+        }
+    </script>
+</body>
+</html>

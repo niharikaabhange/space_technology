@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    background-image: url("../supplementary/updatesbackground.jpeg");
+    background-size:cover;
+    
+    background-repeat: no-repeat;
+    color: rgb(48, 45, 45);
+    font-size:50px;
+    font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+    
+    }
+
+
+.header {
+        margin: 0px;
+          padding: 20px;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.8);
+          color: white;
+          font-size: 30px;
+        }
+.bottombuttons{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 35%;
+}
+
+.buttonleft {
+            background-color: transparent;
+            border: 0px ;
+            border-radius: 10px;
+            color: white;
+            
+            padding: 8px 30px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 17px;
+            margin: 0px 0px;
+            cursor: pointer;
+          }
+            
+          
+.buttonleft:hover {
+            
+            Opacity: 0.5;
+            border: 0px ;
+            color: white;
+            font-size: 40px;
+            transition: 0.7s;
+            }
+        
+            
+.buttonright:hover {
+            background-color: white;
+            Opacity: 0.5;
+            border: 1px solid white;
+            color: black;
+            font-size: 20px;
+            transition: 0.7s;
+            }
+            
+          
+.buttonright {
+            background-color: transparent;
+            border: 0.5px solid white;
+            border-radius: 10px;
+            color: white;
+            float: right;
+            padding: 8px 30px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            font-family:"Century Gothic", sans-serif;
+            margin: 4px 4px;
+            cursor: pointer;
+          }
+          
+
+.enhancedimages {
+          transition: transform 0.3s ease; /* Define the transition properties */
+        }
+
+#hbcomet{
+    transition: transform 2s ease;
+}
+        
