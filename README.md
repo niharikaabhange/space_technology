@@ -10,4 +10,5 @@ Integrated Animations, responsive.
 
 <img width="1440" alt="Screenshot_jupiter" src="https://github.com/niharikaabhange/space_technology/assets/73836890/2b0fb723-a955-4c36-abd3-6e5aaaf719be">
 
-![Uploading Screenshot_Signup.png…]()
+<img width="1440" alt="Screenshot_Signup" src="https://github.com/niharikaabhange/space_technology/assets/73836890/445a5e6c-9416-43a4-afd5-7dcbeab9eaeb">
+
